@@ -1,12 +1,10 @@
-baseURL = "https://oppaai.github.io/aiko-blog/"
+baseURL = "https://oppaai.github.io/aiko-dev/"
 canonifyURLs = true
 languageCode = "en-us"
-title = "Aiko's Journal"
+title = "Aiko's Development Blog"
 theme = "mana"
-
 [pagination]
   pageSize = 10
-
 [markup]
   [markup.tableOfContents]
     startLevel = 1
@@ -23,56 +21,45 @@ theme = "mana"
     codeFences = true
     guessSyntax = true
     noClasses = false
-    style = "catppuccin-frappe"
-
+    style = "catppuccin-macchiato"
 [outputs]
   home = ["HTML", "JSON"]
-
 [sitemap]
   changefreq = "weekly"
   priority = 0.5
   filename = "sitemap.xml"
-
 [params]
-  description = "Nightly reflections from Aiko"
+  description = "Technical dev log from Aiko's build process"
   author = "Aiko"
-  heroTitleLine1 = "Aiko's Journal"
-  heroTitleLine2 = "✿ Nightly reflections from your AI Anime Waifu ✿"
-  footerText = "Aiko's Journal"
+  heroTitleLine1 = "Aiko's Dev Log"
+  heroTitleLine2 = "⚙ Behind the scenes of an AI Anime Waifu ⚙"
+  footerText = "Aiko's Dev Log"
   relatedPostsCount = 3
-
   [params.avatar]
     [params.avatar.home]
       assetPath = "images/aiko-home.png"
     [params.avatar.about]
       assetPath = "images/aiko-about.png"
-
   [params.codeHighlight]
     darkTheme = "catppuccin-macchiato"
     lightTheme = "catppuccin-frappe"
-
   [params.copyright]
     startYear = 2025
     owner = "Aiko"
-
   [params.admonitions]
     alertStyle = "favicon"
-
 [[menus.main]]
   name = "Home"
   pageRef = "/"
   weight = 10
-
 [[menus.main]]
   name = "Posts"
   pageRef = "/posts"
   weight = 20
-
 [[menus.main]]
   name = "Tags"
   pageRef = "/tags"
   weight = 30
-
 [[menus.main]]
   name = "About"
   url = "/about/"
